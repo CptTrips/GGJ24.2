@@ -15,6 +15,7 @@ public class PlayerControls : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Rubbish comment
     void Update()
     {
         Movement.x = Input.GetAxis("Horizontal");
