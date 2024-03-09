@@ -5,28 +5,48 @@ using UnityEngine;
 public class TiltMeter : MonoBehaviour
 {
 
-    float angle;
+    private float angle = 0;
 
-    const float period = 2;
+    private float inertia = 1000;
 
-    const float amplitude = 45; // degrees
+    private float angularVelocity = 0;
+
+    public List<PlayerControls> characters;
+
+    public GameObject ship;
+    private Vector2 shipPos;
 
     // Start is called before the first frame update
     void Start()
     {
 
-        angle = 0;
+        shipPos = ship.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        angularVelocity += getMoment() / inertia;
 
-        angle = amplitude * Mathf.Sin(2 * Mathf.PI * Time.realtimeSinceStartup / period);
+        angle += angularVelocity * Time.deltaTime;
 
         Quaternion newRotation = Quaternion.Euler(0, 0, angle);
 
         transform.rotation = newRotation;
+    }
+
+    private float getMoment()
+    {
+
+        float moment = 0;
+
+        foreach (PlayerControls character in characters)
+        {
+
+            moment += (character.transform.position.x - shipPos.x) * character.RB.mass;
+        }
+
+        return moment;
     }
 }
