@@ -7149,6 +7149,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1462930338
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1834000532517160413, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: prompt
+      value: Someone in Kitchen!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834000532517160413, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: objective
+      value: 
+      objectReference: {fileID: 2145784458}
+    - target: {fileID: 8013616346391357302, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_Name
+      value: TaskSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213233434941636470, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213233434941636470, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213233434941636470, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213233434941636470, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213233434941636470, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213233434941636470, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213233434941636470, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213233434941636470, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213233434941636470, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213233434941636470, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213233434941636470, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
 --- !u!1 &1504985002
 GameObject:
   m_ObjectHideFlags: 0
@@ -8475,3 +8540,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8617c134c254b34284643ddc688b927, type: 3}
+--- !u!1 &2145784458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2171009359676960768, guid: e8617c134c254b34284643ddc688b927, type: 3}
+  m_PrefabInstance: {fileID: 2145784457}
+  m_PrefabAsset: {fileID: 0}
