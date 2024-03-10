@@ -43,7 +43,7 @@ public class TiltMeter : MonoBehaviour
 
         if (enablePhysics)
         {
-            angularVelocity += getMoment() / inertia;
+            angularVelocity += getMoment() / inertia * Time.deltaTime;
 
             angularVelocity = Mathf.Min(angularVelocity, maxAngularVelocity);
 
