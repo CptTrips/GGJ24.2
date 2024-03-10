@@ -6,6 +6,7 @@ public class TextSystem : MonoBehaviour
 {
     public GameObject IntroPanel;
     public GameObject ActionPanel;
+    public GameObject Audio;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +27,6 @@ public class TextSystem : MonoBehaviour
         Time.timeScale = 1.0f;
         IntroPanel.SetActive(false);
         ActionPanel.SetActive(true);
+        Audio.SetActive(true);
     }
 }
