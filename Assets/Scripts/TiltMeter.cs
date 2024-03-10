@@ -7,7 +7,7 @@ public class TiltMeter : MonoBehaviour
 
     private float stability = Mathf.Asin(Mathf.Deg2Rad * 30);
 
-    private float angle = 15F;
+    private float angle = 1F;
 
     private float seaAngle = 0;
 
