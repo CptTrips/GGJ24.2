@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
 
-    public GameObject gameOverPrefab;
+    public GameObject gameOverPrefab, winPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +31,14 @@ public class SceneController : MonoBehaviour
 
         // Load GameOver prefab
         Instantiate(gameOverPrefab);
+
+        Time.timeScale = 0.0f;
+    }
+
+    public void win()
+    {
+
+        Instantiate(winPrefab);
 
         Time.timeScale = 0.0f;
     }

@@ -771,6 +771,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2070500217648814093, guid: 1b48f093d5ed38046aa14f66d9cf487b, type: 3}
+      propertyPath: winPrefab
+      value: 
+      objectReference: {fileID: 1217429890890830293, guid: d83641de401040a45a65be5ca222cbb7, type: 3}
     - target: {fileID: 2630876709908170886, guid: 1b48f093d5ed38046aa14f66d9cf487b, type: 3}
       propertyPath: m_Name
       value: SceneController
@@ -1258,6 +1262,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &514520236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2171009361109587551, guid: e8617c134c254b34284643ddc688b927, type: 3}
+  m_PrefabInstance: {fileID: 2145784457}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,6 +1609,25 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!1 &623022490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8013616346391357302, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+  m_PrefabInstance: {fileID: 1462930338}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &623022494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623022490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910a480f61d3b4d45a1705f5fb40acab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective: {fileID: 514520236}
+  prompt: Man the Starboard Cannons!
 --- !u!1 &642133298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,6 +1867,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1017351612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017351608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa987df0db92f34bb49c76ebb806cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupation: 0
+  occupied: 0
 --- !u!1 &1211305968
 GameObject:
   m_ObjectHideFlags: 0
@@ -7052,6 +7094,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1442313790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442313786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa987df0db92f34bb49c76ebb806cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupation: 0
+  occupied: 0
 --- !u!1 &1445676950
 GameObject:
   m_ObjectHideFlags: 0
@@ -7218,6 +7274,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6353941956347473163, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: prompt
+      value: 
+      objectReference: {fileID: 1920654103}
+    - target: {fileID: -6353941956347473163, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
+      propertyPath: sceneController
+      value: 
+      objectReference: {fileID: 331995261}
     - target: {fileID: 1834000532517160413, guid: 13e0271dc9bd06544b7c000c6eef7012, type: 3}
       propertyPath: prompt
       value: Someone in Kitchen!
@@ -7455,6 +7519,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1552996149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552996145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa987df0db92f34bb49c76ebb806cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupation: 0
+  occupied: 0
 --- !u!1 &1561903419
 GameObject:
   m_ObjectHideFlags: 0
@@ -8055,6 +8133,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1817593175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817593171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa987df0db92f34bb49c76ebb806cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupation: 0
+  occupied: 0
 --- !u!1 &1910521933
 GameObject:
   m_ObjectHideFlags: 0
@@ -8614,6 +8706,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2112326413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112326409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa987df0db92f34bb49c76ebb806cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupation: 0
+  occupied: 0
 --- !u!1001 &2145784457
 PrefabInstance:
   m_ObjectHideFlags: 0

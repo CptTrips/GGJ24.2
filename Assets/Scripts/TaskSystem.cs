@@ -13,11 +13,16 @@ public class TaskSystem : MonoBehaviour
 
     private List<GameObject> players;
 
+    [SerializeField]
     private int currentTask = 0;
 
     public bool tasksComplete = false;
 
+    [SerializeField]
     private Text prompt;
+
+    [SerializeField]
+    private SceneController sceneController;
 
     // Start is called before the first frame update
     void Start()
@@ -30,20 +35,16 @@ public class TaskSystem : MonoBehaviour
     void Update()
     {
 
-        if (taskComplete())
+        if (!tasksComplete && taskComplete())
             nextTask();
     }
 
     bool taskComplete()
     {
 
-        foreach (GameObject player  in players)
-        {
-            if (false)
-                return true;
-        }
+        TaskArea collider = tasks[currentTask].objective.GetComponentInChildren<TaskArea>();
 
-        return false;
+        return collider.occupied;
     }
 
     void nextTask()
@@ -58,6 +59,8 @@ public class TaskSystem : MonoBehaviour
         {
             tasksComplete = true;
             prompt.text = "";
+
+            sceneController.gameOver();
         }
     }
 }
