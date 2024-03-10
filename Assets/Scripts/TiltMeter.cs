@@ -5,24 +5,30 @@ using UnityEngine;
 public class TiltMeter : MonoBehaviour
 {
 
-    private float stability = Mathf.Asin(Mathf.Deg2Rad * 30);
+    public float stability = Mathf.Asin(Mathf.Deg2Rad * 30);
 
-    private float angle = 1F;
+    public float angle = 1F;
 
-    private float seaAngle = 0;
+    public float seaAngle = 0;
 
-    private float inertia = 1000;
+    public float inertia = 1000;
 
-    private float shipMoment = 750F;
+    public float shipMoment = 750F;
 
-    private float angularVelocity = 0;
+    public float angularVelocity = 0;
 
-    private float maxAngularVelocity = 30;
+    public float maxAngularVelocity = 30;
+
+    public float gameOverAngle = 45;
 
     public List<PlayerControls> characters;
 
     public GameObject ship;
     private Vector2 shipPos;
+
+    public SceneController sceneController;
+
+    private bool enablePhysics = true;
 
     // Start is called before the first frame update
     void Start()
@@ -35,15 +41,30 @@ public class TiltMeter : MonoBehaviour
     void Update()
     {
 
-        angularVelocity += getMoment() / inertia;
+        if (enablePhysics)
+        {
+            angularVelocity += getMoment() / inertia;
 
-        angularVelocity = Mathf.Min(angularVelocity, maxAngularVelocity);
+            angularVelocity = Mathf.Min(angularVelocity, maxAngularVelocity);
 
-        angle += angularVelocity * Time.deltaTime;
+            angle += angularVelocity * Time.deltaTime;
 
-        Quaternion newRotation = Quaternion.Euler(0, 0, angle);
+            if (Mathf.Abs(angle) > gameOverAngle)
+                gameOver();
 
-        transform.rotation = newRotation;
+            Quaternion newRotation = Quaternion.Euler(0, 0, angle);
+
+            transform.rotation = newRotation;
+        }
+    }
+
+    private void gameOver()
+    {
+
+        Debug.Log("Game over");
+        enablePhysics = false;
+
+        sceneController.gameOver();
     }
 
     private float getMoment()
