@@ -20,6 +20,6 @@ public class SceneController : MonoBehaviour
     public void LoadLevel1()
     {
 
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level1");
     }
 }
