@@ -60,7 +60,7 @@ public class TaskSystem : MonoBehaviour
             tasksComplete = true;
             prompt.text = "";
 
-            sceneController.gameOver();
+            sceneController.win();
         }
     }
 }
